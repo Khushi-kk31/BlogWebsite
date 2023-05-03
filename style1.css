@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: max-content;
+    max-width: 50%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 100px repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    padding: 10px 25px;
+    border: 1px solid black;
+    gap: 30px 20px;
+ 
+}
+.title{
+    grid-area: 1/1/2/3;
+    align-self: center;
+}
+
+.title> h1{
+    display: inline;
+    position: relative;
+    left: 32%;
+    font-size: 35px;
+}
+
+.title> img{
+    display: inline;
+    height: 14px;
+    width: 14px;
+    position: relative;
+    left: 65%;
+}
+
+.title> a{
+    display: inline;
+    color: black;
+}
+.card{
+    box-shadow: 0 0 2px 1px rgb(179, 174, 174);
+    padding: 20px;
+}
+
+.card> h5{
+    color: rgb(1, 121, 250);
+    line-height: 30px;
+}
+
+.card> h6{
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 25px;
+}
+#design{
+    color: rgb(41, 174, 4);
+}
+.card> a{
+    color: rgb(31, 84, 255);
+}
